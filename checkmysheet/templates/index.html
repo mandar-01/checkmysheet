@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form method="post" action="" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{form.image}}
+		<button type="submit" class="btn btn-primary">Done</button>
+	</form>
+	<p> status is {{status}}</p>
+</body>
+</html>

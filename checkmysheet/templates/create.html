@@ -6,9 +6,9 @@
 <body>
 	<form method="post" action="" enctype="multipart/form-data">
 		{% csrf_token %}
-		{{form.image}}
-		<button type="submit" class="btn btn-primary">Done</button>
+		{{form.as_p}}
+		<input type="submit" value="Done">
 	</form>
-	<p> status is {{status}}</p>
+	<p>stattus is {{status}}</p>
 </body>
 </html>

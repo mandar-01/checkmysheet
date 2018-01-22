@@ -5,3 +5,6 @@ class PostForm(forms.ModelForm):
 	class Meta:
 		model = Post
 		fields = ['image',]
+
+# class UploadFileForm(forms.Form):
+# 	image = forms.ImageField()

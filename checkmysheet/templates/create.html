@@ -4,11 +4,16 @@
 	<title></title>
 </head>
 <body>
-	<form method="post" action="" enctype="multipart/form-data">
+	<form method="POST" action="" enctype="multipart/form-data">
 		{% csrf_token %}
 		{{form.as_p}}
 		<input type="submit" value="Done">
 	</form>
-	<p>stattus is {{status}}</p>
+<!-- 	<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    	<input type="file" name="myfile">
+    	<button type="submit">Upload</button>
+    </form> -->
+	<p>status is {{status}}</p>
 </body>
 </html>
